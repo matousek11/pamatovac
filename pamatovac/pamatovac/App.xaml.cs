@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pamatovac.Services;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,11 @@ namespace pamatovac
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage());
+            string name = PreferencesService.LoadPreference(Constants.Constants.NAME_PREFERENCES);
+            if(name == null)
+                MainPage = new NavigationPage(new WritePage());
+            else
+                MainPage = new NavigationPage(new MainPage(name));
         }
 
         protected override void OnStart()

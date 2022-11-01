@@ -14,6 +14,14 @@ namespace pamatovac
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            name.Text = "Jméno";
+        }
+
+        public MainPage(string name)
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+            this.name.Text = name;
         }
 
         private async void Continue_Button_Clicked(object sender, EventArgs e)
