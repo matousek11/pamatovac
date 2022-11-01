@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pamatovac.MainPage"
+             BackgroundColor="#2b2d42">
+
+    <StackLayout>
+        <Label Text="Pamatovač" FontSize="52" TextColor="#edf2f4" HorizontalTextAlignment="Center"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label x:Name="name" Text="Lukáš" FontSize="52" TextColor="#edf2f4" HorizontalTextAlignment="Center" Margin="0, 0, 0, 30"/>
+            <Button Text="Pokračovat" BackgroundColor="#8d99ae" TextColor="#edf2f4" VerticalOptions="EndAndExpand" WidthRequest="200" CornerRadius="30" Clicked="Continue_Button_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
