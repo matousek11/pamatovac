@@ -1,6 +1,4 @@
 # pamatovac
-App which utilize preference storage to save name that is entered into entry.
-
 ## Table of contents
 * [About](#general-info)
 * [Technologies](#about)
